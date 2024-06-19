@@ -319,11 +319,6 @@ Script에 해당 전환이벤트 를 삽입할 경우, 한글 전환이벤트명
 | 상품/서비스 목록 보기               | view_item_list                     | 상품/서비스의 목록들을 보았음                      |
 | 업체 소개보기                    | about_us                           | 업체에 대해 소개하는 페이지를 보았음.                 |
 | 서비스 제공자 보기                 | staff                              | 서비스를 제공하는 사람들을 소개하는 페이지를 보았음          |
-&nbsp;
-&nbsp;
-
-| **전환이벤트명**<img width=100/> | **전환이벤트 type 코드명**<img width=100/> | **설명**<img width=480/>                                                |
-| -------------------------- | ---------------------------------- | --------------------------------------------------------------------- |
 | 사업장 위치 보기/길찾기              | location                           | 사업장의 위치 혹은 사업장을 가는 방법을 소개하는 페이지를 보았음                                  |
 | 이벤트/프로모션 신청                | promotion                          | 이벤트나 프로모션을 신청하였음.                                                     |
 | 의사소통채널 추가                  | add_contact_method                 | 메신저 추가, SNS팔로우 등 업체에 보다 쉽게 컨택할 수 있도록 <br>의사소통 채널을 추가하였음.              |
@@ -466,11 +461,28 @@ if (window.wcs) {
     var _conv = {}; // 이벤트 정보 담을 object 생성
    
     _conv.type = "purchase";  // object에 구매(purchase) 이벤트 세팅  
-    
-    _conv.items = ... // 구매(purchase) 이벤트에 대한 세부 내용(Property) 세팅
+    _conv.id = "20231220" // 전환행동에 대한 ID (구매의 경우 주문번호 권장)
+    _conv.items = [       // 구매(purchase) 이벤트에 대한 세부 내용(Property) 세팅
+          { // #1번 item
+                id: "7786",                    //string 상품 id (필수)
+                name: "설화수 탄력크림",        //string 상품 명 (필수)
+                category: "화장품/스킨케어/크림",   //string 카테고리
+                quantity: 3,                     //number 결제 수량 (필수)
+                payAmount: 90000,                //number 결제 금액 (필수), 1개당 3만원, 3개 9만원
+                option: "용량:120" //string 상품 자체의 옵션 (예: 색상 )
+           },              
+           { // #2번 item
+                id: "8123",                    //string 상품 id (필수)
+                name: "윤조에센스",        //string 상품 명 (필수)
+                category: "화장품/스킨케어/에센스",   //string 카테고리
+                quantity: 2,                     //number 결제 수량 (필수)
+                payAmount: 200000,                //number 결제 금액 (필수), 1개는 10만원, 2개 20만원
+                option: "용량:120" //string 상품 자체의 옵션 (예: 색상 )
+            }
+    ];  
     
     _conv.value = "290000";     // item별 결제금액(payAmount)의 합       
-	
+
     wcs.trans(_conv); // 전환 이벤트 정보를 담은 object를 서버에 전송
   }
  
