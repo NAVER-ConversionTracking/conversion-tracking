@@ -195,8 +195,8 @@ wcs.trans(_conv); // 전환 이벤트 정보를 담은 object를 서버에 전�
 
 #### 최소(필수)스펙
 일반적으로 전환이벤트를 전송하기 위한, 최소(필수) 스펙은 다음과 같습니다.
- - 구매(purchase)의 경우 **전환이벤트코드** 및 **전환가치(\_conv.value)** 2가지가 필수스펙입니다.
- - 그 외 전환이벤트 에서는, **전환이벤트코드**만 넣으시면 됩니다.
+- 구매(purchase)의 경우 **전환이벤트코드** 및 **전환가치(\_conv.value)** 2가지가 필수스펙입니다.
+- 그 외 전환이벤트 에서는, **전환이벤트코드**만 넣으시면 됩니다.
 
 구매(purchase)의 경우, 최소필수스펙 예시
 
@@ -229,11 +229,11 @@ wcs.trans(_conv); // 전환이벤트 정보를 담은 object를 서버에 전송
 네이버 다이내믹광고(Naver Dynamic Ad) 상품을 이용하시는 경우, 사이트에 설치되어야 하는 Script 필수스펙이 위에서 기술된 내용보다 더 많습니다.
 
 (a) 네이버 다이내믹광고(NDA)상품 이용시, 사이트에는 아래 5가지 전환이벤트가 모두 설치되어야 원활한 광고 노출이 가능합니다.
- - 구매완료(purchase)  
- - 결제시작(begin_checkout)  
- - 장바구니담기(add_to_cart)  
- - 상품찜/저장(add_to_wishlist)  
- - 상품상세보기(view_product)
+- 구매완료(purchase)
+- 결제시작(begin_checkout)
+- 장바구니담기(add_to_cart)
+- 상품찜/저장(add_to_wishlist)
+- 상품상세보기(view_product)
 
 > [!TIP]
 > 위 전환이벤트 용 Script를 사이트에 삽입할 때, 사이트에서 해당 행동의 시작 시점(예: 장바구니 버튼 클릭) 보다는, 해당 행동이 실제 완료되었을 때(예: 장바구니에 실제로 담기는 것이 완료되었을 때) Script가 동작하도록 구현하시는 것을 권장드립니다. 
@@ -334,12 +334,12 @@ Script에 해당 전환이벤트 를 삽입할 경우, 한글 전환이벤트명
 | **Property항목** | **세부항목** | **Data Type** | **의미** | **예시** | **Script예제** |
 | ---- | ---- | ---- | ---- | ---- | ---- |
 | id |  | string | 해당 전환 이벤트의 이용자 행동 ID. (광고주 사이트에서 생성하는 정보) | 주문번호: 20231220 | _conv.id: "20231220" |
-| items(#1) | item.id | string | 행동의 대상이 되는 재화/용역의 ID (예: 상품ID) | 상품번호: 7789 | \_conv.items=[<br>  {  <br>    id:"7786",  <br>    name:"설화수 탄력크림",  <br>    category:"화장품/스킨케어/크림",  <br>    quantity:3,  <br>    payAmount:90000,  <br>    option: "용량:120",  <br>  }<br>] |
-| ^ | item.name | string | 행동의 대상이 되는 재화/용역의 이름 | 상품명: 설화수 탄력크림 | ^ |
-| ^ | item.category | string | 재화/용역의 카테고리 | 카테고리: 화장품/스킨케어/크림 | ^ |
-| ^ | item.quantity | number | 재화/용역의 수량 | 구매(결제)수량: 3개 | ^ |
-| ^ | item.payAmount | number | 재화/용역의 금액 (위 재화/용역 ID에 대한 총 결제금액. 단가 아님) | 결제금액: 90,000원 | ^ |
-| ^ | item.option | string | 재화/용역의 옵션 | 용량: 120ml | ^ |
+| items(#1) | item.id | string | 행동의 대상이 되는 재화/용역의 ID (예: 상품ID) | 상품번호: 7789 | \_conv.items=[<br>  {  <br>    id:"7786",|
+|  | item.name | string | 행동의 대상이 되는 재화/용역의 이름 | 상품명: 설화수 탄력크림 | name:"설화수 탄력크림", |
+|  | item.category | string | 재화/용역의 카테고리 | 카테고리: 화장품/스킨케어/크림 | category:"화장품/스킨케어/크림", |
+|  | item.quantity | number | 재화/용역의 수량 | 구매(결제)수량: 3개 | quantity:3, |
+|  | item.payAmount | number | 재화/용역의 금액 (위 재화/용역 ID에 대한 총 결제금액. 단가 아님) | 결제금액: 90,000원 | payAmount:90000, |
+|  | item.option | string | 재화/용역의 옵션 | 용량: 120ml | option: "용량:120" <br>  }<br>] |
 | items(#2) | (위 #1 내용 반복) | ... |  |  |  |
 | value |  | string | 복수개의 재화/용역의 전체 금액 (배송비 제외 권장) | 결제금액: 50,000원 | _conv.value="50000" |
 
@@ -405,7 +405,7 @@ if (window.wcs) {
 만약, PV이벤트와 전환이벤트로그 전송이 서로 다른 시점에 발생한다면, 아래와 같은 (a), (b), (c) Script에서, 페이지 로딩시 (a)를 먼저 로딩 하고, (b), (c)는 필요한 시점에 해당 Script가 동작하도록 설정하시면 됩니다. 
 ((b) PV(page view)용 Script는 기본적으로 모든 페이지에서, 페이지가 열릴 때 마다 실행이 되어야 합니다. (c) 전환이벤트 용 Script는 행동이 완료되는 시점에 실행 되도록 구현하는 것을 권장 합니다. 이렇게 구현이 어려운 경우 행동이 시작되는 시점(예: 버튼 클릭)에 실행이 되도록 구현하는 것도 가능합니다.)
 
-(a) 페이지별 공통설정 Script
+#### # (a) 페이지별 공통설정 Script
 ```js
 <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
  
@@ -425,7 +425,7 @@ if (window.wcs) {
 ```
 
 
-(b) PV(Page View) 이벤트 전송 Script
+#### # (b) PV(Page View) 이벤트 전송 Script
 ```js
 <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
 
@@ -445,7 +445,7 @@ if (window.wcs) {
 ```
 
 
-(c) 전환이벤트 전송 Script
+#### # (c) 전환이벤트 전송 Script
 ```js
 <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
 
@@ -488,3 +488,31 @@ if (window.wcs) {
  
 </script>
 ```
+
+(a)와 (b)는 사이트의 모든 페이지에서 실행이 되어야 하므로, 합해서 설치하고, (c)는 전환이 발생하는 상황(버튼클릭 혹은 페이지 열림)에만 설치할 수도 있습니다
+
+이 경우 (a)와 (b)을 합한 Script 블록의 형태는 다음과 같습니다.
+
+#### # (a) 페이지별 공통설정 Script + (b) PV(Page View) 이벤트 전송 Script
+
+```js
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+ 
+<script type="text/javascript">
+ 
+if (window.wcs) {
+    if(!wcs_add) var wcs_add = {};
+    
+    // (2) 각 사이트별 식별자 설정
+    wcs_add["wa"] = "AccountId";      // 사이트 식별자 (=네이버공통키, na_account_id)
+  
+    // (3) 광고 전환추적을 위한 cookie domain설정
+    wcs.inflow("site-domain");
+
+    // (4) PV 이벤트 전송
+    wcs_do(); // PV 이벤트 전송
+ }
+ 
+</script>
+```
+
