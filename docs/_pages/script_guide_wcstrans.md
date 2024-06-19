@@ -268,18 +268,18 @@ if (window.wcs) {
  
     var _conv = {}; // 이벤트 정보 담을 object 생성
  
-    _conv.type = 'purchase';  // object에 구매(purchase) 이벤트 세팅
+    _conv.type = "purchase";  // object에 구매(purchase) 이벤트 세팅
  
     _conv.items = [       // 전환이벤트 행동의 내용 및 대상에 대한 정보 기술
           { // #1번 item
-                id: '7786'                  //string 상품 id (필수), 네이버쇼핑 상품 EP로 전달하는 상품ID와 동일해야 함
+                id: "7786"                  //string 상품 id (필수), 네이버쇼핑 상품 EP로 전달하는 상품ID와 동일해야 함
           },              
           { // #2번 item
-                id: '8123'                   //string 상품 id (필수), 네이버쇼핑 상품EP로 전달하는 상품ID와 동일해야 함
+                id: "8123"                   //string 상품 id (필수), 네이버쇼핑 상품EP로 전달하는 상품ID와 동일해야 함
           }
     ];  
  
-    _conv.value = '50000'; // item #1, item #2 2개의 총 구매비용
+    _conv.value = "50000"; // item #1, item #2 2개의 총 구매비용
  
     wcs.trans(_conv); // 전환이벤트 정보를 담은 object를 서버에 전송(위 item #1, #2 포함)
 }
@@ -287,67 +287,9 @@ if (window.wcs) {
 </script>
 ```
 
-구매완료(purchase)가 아닌 다른 전환이벤트의 경우, \_conv.value 는 넣지 않으셔도 됩니다.
+구매완료(purchase)가 아닌 다른 전환이벤트의 경우, `_conv.value` 는 넣지 않으셔도 됩니다.
 
 (c) 위 전환이벤트 외에 다른 전환이벤트도 설치하시는 것은 문제 없으며, 이 경우 전환이벤트type코드 입력 외에 다른 필수사항은 없습니다.
-
------
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
 
 ### 2.4.2. 전환이벤트 종류 및 Property 설명
 
@@ -396,15 +338,15 @@ Script에 해당 전환이벤트 를 삽입할 경우, 한글 전환이벤트명
 
 | **Property항목** | **세부항목** | **Data Type** | **의미** | **예시** | **Script예제** |
 | ---- | ---- | ---- | ---- | ---- | ---- |
-| id |  | string | 해당 전환 이벤트의 이용자 행동 ID. (광고주 사이트에서 생성하는 정보) | 주문번호: 20231220 | _conv.id: '20231220' |
-| items(#1) | item.id | string | 행동의 대상이 되는 재화/용역의 ID (예: 상품ID) | 상품번호: 7789 | \_conv.items=[<br>  {  <br>    id:'7786',  <br>    name:'설화수 탄력크림',  <br>    category:'화장품/스킨케어/크림',  <br>    quantity:3,  <br>    payAmount:90000,  <br>    option: '용량:120',  <br>  }<br>] |
+| id |  | string | 해당 전환 이벤트의 이용자 행동 ID. (광고주 사이트에서 생성하는 정보) | 주문번호: 20231220 | _conv.id: "20231220" |
+| items(#1) | item.id | string | 행동의 대상이 되는 재화/용역의 ID (예: 상품ID) | 상품번호: 7789 | \_conv.items=[<br>  {  <br>    id:"7786",  <br>    name:"설화수 탄력크림",  <br>    category:"화장품/스킨케어/크림",  <br>    quantity:3,  <br>    payAmount:90000,  <br>    option: "용량:120",  <br>  }<br>] |
 | ^ | item.name | string | 행동의 대상이 되는 재화/용역의 이름 | 상품명: 설화수 탄력크림 | ^ |
 | ^ | item.category | string | 재화/용역의 카테고리 | 카테고리: 화장품/스킨케어/크림 | ^ |
 | ^ | item.quantity | number | 재화/용역의 수량 | 구매(결제)수량: 3개 | ^ |
 | ^ | item.payAmount | number | 재화/용역의 금액 (위 재화/용역 ID에 대한 총 결제금액. 단가 아님) | 결제금액: 90,000원 | ^ |
 | ^ | item.option | string | 재화/용역의 옵션 | 용량: 120ml | ^ |
 | items(#2) | (위 #1 내용 반복) | ... |  |  |  |
-| value |  | string | 복수개의 재화/용역의 전체 금액 (배송비 제외 권장) | 결제금액: 50,000원 | _conv.value='50000' |
+| value |  | string | 복수개의 재화/용역의 전체 금액 (배송비 제외 권장) | 결제금액: 50,000원 | _conv.value="50000" |
 
 ----
 ## 2.5. 전환이벤트 와 Property 및 PV(page view)이벤트 전송 Script 예시 
@@ -434,30 +376,30 @@ if (window.wcs) {
  
     var _conv = {}; // 전환이벤트 정보 담을 object 생성
  
-    _conv.type = 'purchase' ; // object에 구매(purchase) 이벤트 세팅
+    _conv.type = "purchase" ; // object에 구매(purchase) 이벤트 세팅
  
-    _conv.id = '20231220'; // 아래 item전체 결제 행동에 대한 번호(예: 주문번호)
+    _conv.id = "20231220"; // 아래 item전체 결제 행동에 대한 번호(예: 주문번호)
  
     _conv.items = [       // 전환이벤트 행동의 내용 및 대상에 대한 정보 기술
           { // #1번 item
-                id: '7786',                    //string 상품 id (필수)
-                name: '설화수 탄력크림',        //string 상품 명 (필수)
-                category: '화장품/스킨케어/크림',   //string 카테고리
+                id: "7786",                    //string 상품 id (필수)
+                name: "설화수 탄력크림",        //string 상품 명 (필수)
+                category: "화장품/스킨케어/크림",   //string 카테고리
                 quantity: 3,                     //number 결제 수량 (필수)
                 payAmount: 90000,                //number 결제 금액 (필수), 1개당 3만원, 3개 9만원
-                option: '용량:120' //string 상품 자체의 옵션 (예: 색상 )
+                option: "용량:120" //string 상품 자체의 옵션 (예: 색상 )
            },              
            { // #2번 item
-                id: '8123',                    //string 상품 id (필수)
-                name: '윤조에센스',        //string 상품 명 (필수)
-                category: '화장품/스킨케어/에센스',   //string 카테고리
+                id: "8123",                    //string 상품 id (필수)
+                name: "윤조에센스",        //string 상품 명 (필수)
+                category: "화장품/스킨케어/에센스",   //string 카테고리
                 quantity: 2,                     //number 결제 수량 (필수)
                 payAmount: 200000,                //number 결제 금액 (필수), 1개는 10만원, 2개 20만원
-                option: '용량:120' //string 상품 자체의 옵션 (예: 색상 )
+                option: "용량:120" //string 상품 자체의 옵션 (예: 색상 )
             }
     ];  
  
-    _conv.value = '290000';     // item별 결제금액의 합
+    _conv.value = "290000";     // item별 결제금액의 합
  
     wcs.trans(_conv); // 전환이벤트 정보를 담은 object를 서버에 전송(위 item #1, #2 포함)
 }
@@ -523,11 +465,11 @@ if (window.wcs) {
     // (5) 결제완료 전환 이벤트 전송
     var _conv = {}; // 이벤트 정보 담을 object 생성
    
-    _conv.type = 'purchase';  // object에 구매(purchase) 이벤트 세팅  
+    _conv.type = "purchase";  // object에 구매(purchase) 이벤트 세팅  
     
     _conv.items = ... // 구매(purchase) 이벤트에 대한 세부 내용(Property) 세팅
     
-    _conv.value = '290000';     // item별 결제금액(payAmount)의 합       
+    _conv.value = "290000";     // item별 결제금액(payAmount)의 합       
 	
     wcs.trans(_conv); // 전환 이벤트 정보를 담은 object를 서버에 전송
   }
