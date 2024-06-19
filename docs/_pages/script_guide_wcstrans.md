@@ -7,7 +7,7 @@
 
 본 문서는 네이버 검색광고(SA)의 프리미엄로그분석, 네이버 성과형디스플레이광고의 전환추적 서비스를 이용하기 위하여 광고주 사이트에 설치하는 Script에 대한 가이드를 제공하는 것을 목적으로 합니다. 
 
-> [!WARNING] 주의
+> [!WARNING]
 > Script 설치시, 네이버 광고에서 제공하는 Script는 1개 종류만 설치가 되어야 합니다.  
 본 문서에서 기술하는 Script와 기존 버전의 광고 Script가 함께 있다면 중복으로 전환이벤트가 발생할 수 있으며, 이에 따라 광고 보고서에도 중복으로 전환이 집계될 수 있으므로 주의가 필요합니다.
 
@@ -73,12 +73,14 @@ if (window.wcs) {
 | (3) | 광고전환 추적을 위한 유입정보 저장 목적의 cookie domain 설정 및 cookie 저장 |
 | (4) | PV이벤트 전송 |
 | (5) | 전환이벤트 전송 (이벤트와 함께 전송되는 가능한 meta정보들에 대해서는 추가 설명) |
+
 위 구조에서 사이트에 따라, 사이트 화면의 종류/수집하고자 하는 전환이벤트에 따라 달라지는 정보에 대한 상세 설명은 다음 챕터에서 설명합니다.
 
 ------
 ## 2.2. Script의 각 구역별 설명
 
 위 Script 구조의 각 구역번호별로 Script 설치 방법에 대해 구체적으로 설명드립니다.
+
 #### (1) wcslog.js import
 wcslog.js는 각종 이벤트를 수집하고 서버로 전송하는 method를 가지고 있는 javascript library입니다. 이 library를 import합니다.
 (이 library를 import하지 않는 경우 script는 정상동작하지 않습니다.)
@@ -86,29 +88,21 @@ wcslog.js는 각종 이벤트를 수집하고 서버로 전송하는 method를 �
 #### (2) 각 사이트별 식별자(=네이버공통키, na_account_id) 설정
 각 사이트별 식별자(=네이버공통키, na_account_id)입니다. 광고플랫폼에서 전환분석을 신청하면 사이트별 식별자가 지정됩니다. 이 값을  'AccountId'부분에  넣으시면 됩니다. (광고플랫폼의 전환분석 메뉴를 통해 신청 다음날 확인 가능하거나 혹은 전환분석 신청시 기재한 담당자에게 전달되는 메일에서 확인이 가능합니다.)
 
-> [!TIP] 각 사이트별 식별자 (=네이버공통키, na_account_id) 확인 방법
-> 로그 분석 서비스를 신청하고 (영업일 기준)1~2일 뒤에 네이버공통키(na_account_id)가 발급됩니다. 발급받은 네이버공통키는 다음과 같은 방법으로 확인할 수 있습니다.
-(i) 네이버 검색광고의 경우
- . 검색광고시스템의 [도구 > 프리미엄 로그 분석] 메뉴에서 [서비스 사용 현황 전체] 탭을 클릭해 [네이버공통키] 칼럼에 있는 값을 확인합니다.
-(ii) 네이버 성과형디스플레이광고의 경우
- . 광고관리시스템의 [도구 > 전환 추적 관리] 메뉴에서 사이트를 선택하면 세부내용이 나오는 창에서 확인합니다.
-(iii) 공통 (메일을 통해 확인)
- . 로그 분석 서비스를 신청한 다음날(영업일 기준)에 신청 시 기재한 메일 주소 혹은 광고주 메일 주소로 전달된 메일에서 확인합니다.
+> [!TIP] 
+> 각 사이트별 식별자 (=네이버공통키, na_account_id) 확인 방법
+> 로그 분석 서비스를 신청하고 (영업일 기준)1~2일 뒤에 네이버공통키(na_account_id)가 발급됩니다. 발급받은 네이버공통키는 다음과 같은 방법으로 확인할 수 있습니다.<br>
+(i) 네이버 검색광고의 경우 <br>
+ . 검색광고시스템의 [도구 > 프리미엄 로그 분석] 메뉴에서 [서비스 사용 현황 전체] 탭을 클릭해 [네이버공통키] 칼럼에 있는 값을 확인합니다.<br>
+(ii) 네이버 성과형디스플레이광고의 경우<br>
+ . 광고관리시스템의 [도구 > 전환 추적 관리] 메뉴에서 사이트를 선택하면 세부내용이 나오는 창에서 확인합니다.<br>
+(iii) 공통 (메일을 통해 확인)<br>
+ . 로그 분석 서비스를 신청한 다음날(영업일 기준)에 신청 시 기재한 메일 주소 혹은 광고주 메일 주소로 전달된 메일에서 확인합니다.<br>
 
-&nbsp
-&nbsp
-&nbsp
-&nbsp
-&nbsp
-&nbsp
-&nbsp
-&nbsp
 #### (3) 광고전환 추적을 위한 cookie domain설정
 광고유입정보를 저장하기 위한 cookie에 대한 domain을 설정합니다. 일반적으로 최상위 domain 값을 넣으시면 됩니다. 
 예를 들어, 사이트가 `www.abc-motors.com` 이라면, site-domain 부분에 `abc-motors.com`을 입려해주시면 됩니다.
 
-
-> [!WARNING] 주의
+> [!WARNING]
 > 만약 다른 사이트와 내 사이트가 sub domain 혹은 sub path 로 구분이 된다면 sub domain 혹은 sub path 까지 포함된 host 값을 site-domain부분에 넣어주시기 바랍니다 
 > 
 예1) sub domain으로 내 사이트와 다른 사이트가 구분이 되는 경우. 내 사이트는 `aaa.abc.com` 인데, 타 사이트는 `bbb.abc.com` 일 때  
@@ -171,30 +165,30 @@ PV이벤트 와 전환이벤트를 함께 전송하는 경우(예: 구매완료 
  
 var _conv = {}; // 전환 이벤트 정보 담을 object 생성
  
-_conv.type = 'purchase';  // 전환 이벤트의 종류 설정
+_conv.type = "purchase";  // 전환 이벤트의 종류 설정
  
-_conv.id = 'xxxnn'; // 전환 ID, 이용자가 한 행동에 대한 ID (예: 주문번호). 없을 경우 생성하지 않거나, null, '' 등 으로 설정
+_conv.id = "xxxnn"; // 전환 ID, 이용자가 한 행동에 대한 ID (예: 주문번호). 없을 경우 생성하지 않거나, null, '' 등 으로 설정
  
 _conv.items = [       // 전환 이벤트 행동의 내용 및 대상에 대한 정보 기술
       {
-            id: 'c12354',                    //string 상품 id (필수)
-            name: 'naverMenShoes123',        //string 상품 명 (필수)
-            category: 'fashion/men/shoes',   //string 카테고리
+            id: "c12354",                    //string 상품 id (필수)
+            name: "naverMenShoes123",        //string 상품 명 (필수)
+            category: "fashion/men/shoes",   //string 카테고리
             quantity: 1,                     //number 결제 수량 (필수)
             payAmount: 20000,                //number 결제 금액 (필수)
-            option: 'color:black, size:260' //string 상품 자체의 옵션 (예: 색상 )
+            option: "color:black, size:260" //string 상품 자체의 옵션 (예: 색상 )
         },
         {
-            id: 'c23456',                    //string 상품 id (필수)
-            name: 'naverWomenShoes234',      //string 상품 명 (필수)
-            category: 'fashion/women/shoes', //string 카테고리
+            id: "c23456",                    //string 상품 id (필수)
+            name: "naverWomenShoes234",      //string 상품 명 (필수)
+            category: "fashion/women/shoes", //string 카테고리
             quantity: 1,                     //number 결제 수량 (필수)
             payAmount: 30000,                //number 결제 금액 (필수)
-            option: 'color:red, size:240'   //string 상품 자체의 옵션 (예: 색상 )
+            option: "color:red, size:240"   //string 상품 자체의 옵션 (예: 색상 )
         }
 ]; 
  
-_conv.value = '50000';
+_conv.value = "50000";
  
 wcs.trans(_conv); // 전환 이벤트 정보를 담은 object를 서버에 전송
 ```
@@ -205,14 +199,15 @@ wcs.trans(_conv); // 전환 이벤트 정보를 담은 object를 서버에 전�
  - 그 외 전환이벤트 에서는, **전환이벤트코드**만 넣으시면 됩니다.
 
 구매(purchase)의 경우, 최소필수스펙 예시
+
 ```js
 // (5) 전환이벤트 전송, (예) 결제완료 이벤트 전송
  
 var _conv = {}; // 전환이벤트 정보 담을 object 생성
  
-_conv.type = 'purchase';  // 전환이벤트의 종류 설정
+_conv.type = "purchase";  // 전환이벤트의 종류 설정
  
-_conv.value = 50000;  // 결제에 여러개 상품을 구매했다면 여기에 금액 합계
+_conv.value = "50000";  // 결제에 여러개 상품을 구매했다면 여기에 금액 합계
  
 wcs.trans(_conv); // 전환이벤트 정보를 담은 object를 서버에 전송
 ```
@@ -223,7 +218,7 @@ wcs.trans(_conv); // 전환이벤트 정보를 담은 object를 서버에 전송
  
 var _conv = {}; // 전환이벤트 정보 담을 object 생성
  
-_conv.type = 'lead';  // 전환이벤트의 종류 설정
+_conv.type = "lead";  // 전환이벤트의 종류 설정
  
 wcs.trans(_conv); // 전환이벤트 정보를 담은 object를 서버에 전송
 ```
@@ -240,11 +235,11 @@ wcs.trans(_conv); // 전환이벤트 정보를 담은 object를 서버에 전송
  - 상품찜/저장(add_to_wishlist)  
  - 상품상세보기(view_product)
 
-> [!TIP] 참고
+> [!TIP]
 > 위 전환이벤트 용 Script를 사이트에 삽입할 때, 사이트에서 해당 행동의 시작 시점(예: 장바구니 버튼 클릭) 보다는, 해당 행동이 실제 완료되었을 때(예: 장바구니에 실제로 담기는 것이 완료되었을 때) Script가 동작하도록 구현하시는 것을 권장드립니다. 
 > (행동이 실제 완료되었을 때 Script가 동작하도록 구현하는 것이 어려운 경우, 버튼 클릭과 같은 행동의 시작시점에 Script가 동작하도록 구현하시는 것도 가능합니다)
 
-(b) 위 전환이벤트를 설치하실 때, 각 전환이벤트에 대한 최소필수 property는 \[상품ID](=item.id) 입니다.  
+(b) 위 전환이벤트를 설치하실 때, 각 전환이벤트에 대한 최소필수 property는 \[상품ID\](=item.id) 입니다.  
 (상품 ID는 네이버 쇼핑 상품EP(Engine Page)로 전달하는 상품ID(id 컬럼으로 연동하는 값)와 동일해야 합니다.)
 
 NDA광고상품을 사용하시는 경우, 구매완료(purchase)이벤트에 대한 최소 필수 스펙을 코드로 나타내면 다음과 같습니다.
