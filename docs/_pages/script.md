@@ -1,7 +1,7 @@
 ---
 title: 네이버 검색광고, 성과형디스플레이광고 전환분석 Script 설치가이드 (wcs.trans버전)
 layout: post
-lesson: 1
+lesson: 4
 ---
 ------
 
