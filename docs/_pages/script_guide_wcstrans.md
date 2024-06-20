@@ -1,7 +1,7 @@
 ---
 title: 네이버 광고 전환분석 Script 설치가이드 (wcs.trans버전)
 layout: post
-lesson: 2
+lesson: 1
 ---
 ------
 
