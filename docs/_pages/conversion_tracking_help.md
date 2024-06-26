@@ -6,3 +6,7 @@ lesson: 3
 ------
 
 # test
+
+## image
+
+![Image텍스트]({{"/assets/img/test_img.png"| relative_url}})
