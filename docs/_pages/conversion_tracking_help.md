@@ -13,6 +13,10 @@ lesson: 3
 
 ![Book logo](/conversion-tracking/assets/img/logo.png)
 
+---
+
+![Book logo](/conversion-tracking/assets/img/logo.png)
+
 ------
 
 ![Book logo](/conversion-tracking/assets/img/logo.png)
