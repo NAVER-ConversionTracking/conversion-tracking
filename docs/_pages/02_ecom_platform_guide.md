@@ -52,8 +52,9 @@ lesson: 2
 '구매완료' 외 다른 전환유형 (회원가입, 장바구니, 신청예약, 기타)을 사용하기 위해서는 임대몰에서 제공하는 Skin 등에 Script를 수동으로 삽입하여야 합니다. 
 Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 업무 진행 업체인 NHN Data에 연락을 주시면 설치 및 테스트를 지원해드립니다. 아래 연락처로 연락해주시기 바랍니다. 
 
-전화번호: OOOO-OOOO
-온라인채팅: OOOO-OOOO
+ . 고객센터(전화): 1877-7035 <br>
+ . 채널 톡(채팅) 상담 : https://navercts.channel.io/home <br>
+ . 공용 Email : navercts@nhndata.com <br>
 
 
 ## 2.2. 메이크샵
@@ -76,8 +77,9 @@ Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 
 '구매완료' 외 다른 전환유형 (회원가입, 장바구니, 신청예약, 기타)을 사용하기 위해서는 임대몰에서 제공하는 Skin 등에 Script를 수동으로 삽입하여야 합니다. 
 Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 업무 진행 업체인 NHN Data에 연락을 주시면 설치 및 테스트를 지원해드립니다. 아래 연락처로 연락해주시기 바랍니다. 
 
-전화번호: OOOO-OOOO
-온라인채팅: OOOO-OOOO
+ . 고객센터(전화): 1877-7035 <br>
+ . 채널 톡(채팅) 상담 : https://navercts.channel.io/home <br>
+ . 공용 Email : navercts@nhndata.com <br>
 
 ## 2.3. 고도몰 이나무
 고도몰(이나무)에서는 현재 전환유형 '구매완료' 는 임대몰 Admin UI에 설정을 함으로써 설정이 완료됩니다. 
@@ -102,8 +104,9 @@ Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 
 '구매완료' 외 다른 전환유형 (회원가입, 장바구니, 신청예약, 기타)을 사용하기 위해서는 임대몰에서 제공하는 Skin 등에 Script를 수동으로 삽입하여야 합니다. 
 Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 업무 진행 업체인 NHN Data에 연락을 주시면 설치 및 테스트를 지원해드립니다. 아래 연락처로 연락해주시기 바랍니다. 
 
-전화번호: OOOO-OOOO
-온라인채팅: OOOO-OOOO
+ . 고객센터(전화): 1877-7035 <br>
+ . 채널 톡(채팅) 상담 : https://navercts.channel.io/home <br>
+ . 공용 Email : navercts@nhndata.com <br>
 
 ## 2.4. 고도몰5
 고도몰5에서는 현재 전환유형 '구매완료' 는 임대몰 Admin UI에 설정을 함으로써 설정이 완료됩니다. 
@@ -126,8 +129,9 @@ Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 
 '구매완료' 외 다른 전환유형 (회원가입, 장바구니, 신청예약, 기타)을 사용하기 위해서는 임대몰에서 제공하는 Skin 등에 Script를 수동으로 삽입하여야 합니다. 
 Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 업무 진행 업체인 NHN Data에 연락을 주시면 설치 및 테스트를 지원해드립니다. 아래 연락처로 연락해주시기 바랍니다. 
 
-전화번호: OOOO-OOOO
-온라인채팅: OOOO-OOOO
+ . 고객센터(전화): 1877-7035 <br>
+ . 채널 톡(채팅) 상담 : https://navercts.channel.io/home <br>
+ . 공용 Email : navercts@nhndata.com <br>
 
 ## 2.5. 위사
 위사에서는 현재 전환유형 '구매완료' 는 임대몰 Admin UI에 설정을 함으로써 설정이 완료됩니다. 
@@ -148,8 +152,9 @@ Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 
 '구매완료' 외 다른 전환유형 (회원가입, 장바구니, 신청예약, 기타)을 사용하기 위해서는 임대몰에서 제공하는 Skin 등에 Script를 수동으로 삽입하여야 합니다. 
 Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 업무 진행 업체인 NHN Data에 연락을 주시면 설치 및 테스트를 지원해드립니다. 아래 연락처로 연락해주시기 바랍니다. 
 
-전화번호: OOOO-OOOO
-온라인채팅: OOOO-OOOO
+ . 고객센터(전화): 1877-7035 <br>
+ . 채널 톡(채팅) 상담 : https://navercts.channel.io/home <br>
+ . 공용 Email : navercts@nhndata.com <br>
 
 ## 2.6. 후이즈몰
 후이즈몰에서는 현재 전환유형 '구매완료' 는 임대몰 Admin UI에 설정을 함으로써 설정이 완료됩니다. 
@@ -172,5 +177,6 @@ Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 
 '구매완료' 외 다른 전환유형 (회원가입, 장바구니, 신청예약, 기타)을 사용하기 위해서는 임대몰에서 제공하는 Skin 등에 Script를 수동으로 삽입하여야 합니다. 
 Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 업무 진행 업체인 NHN Data에 연락을 주시면 설치 및 테스트를 지원해드립니다. 아래 연락처로 연락해주시기 바랍니다. 
 
-전화번호: OOOO-OOOO
-온라인채팅: OOOO-OOOO
+ . 고객센터(전화): 1877-7035 <br>
+ . 채널 톡(채팅) 상담 : https://navercts.channel.io/home <br>
+ . 공용 Email : navercts@nhndata.com <br>
