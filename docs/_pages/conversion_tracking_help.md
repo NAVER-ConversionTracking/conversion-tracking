@@ -9,6 +9,9 @@ lesson: 3
 
 ## image
 
+![테테테]({{"/assets/img/logo.png"| relative_url}})
+
+
 ![Image텍스트]({{"/assets/img/test_img.png"| relative_url}})
 
 ![Book logo](/conversion-tracking/assets/img/logo.png)
