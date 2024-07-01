@@ -53,7 +53,7 @@ lesson: 2
 Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 업무 진행 업체인 NHN Data에 연락을 주시면 설치 및 테스트를 지원해드립니다. 아래 연락처로 연락해주시기 바랍니다. 
 
  . 고객센터(전화): 1877-7035 <br>
- . 채널 톡(채팅) 상담 : https://navercts.channel.io/home <br>
+ . 채널 톡(채팅) 상담 : [https://navercts.channel.io/home](https://navercts.channel.io/home) <br>
  . 공용 Email : navercts@nhndata.com <br>
 
 
@@ -78,7 +78,7 @@ Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 
 Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 업무 진행 업체인 NHN Data에 연락을 주시면 설치 및 테스트를 지원해드립니다. 아래 연락처로 연락해주시기 바랍니다. 
 
  . 고객센터(전화): 1877-7035 <br>
- . 채널 톡(채팅) 상담 : https://navercts.channel.io/home <br>
+ . 채널 톡(채팅) 상담 : [https://navercts.channel.io/home](https://navercts.channel.io/home) <br>
  . 공용 Email : navercts@nhndata.com <br>
 
 ## 2.3. 고도몰 이나무
@@ -105,7 +105,7 @@ Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 
 Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 업무 진행 업체인 NHN Data에 연락을 주시면 설치 및 테스트를 지원해드립니다. 아래 연락처로 연락해주시기 바랍니다. 
 
  . 고객센터(전화): 1877-7035 <br>
- . 채널 톡(채팅) 상담 : https://navercts.channel.io/home <br>
+ . 채널 톡(채팅) 상담 : [https://navercts.channel.io/home](https://navercts.channel.io/home) <br>
  . 공용 Email : navercts@nhndata.com <br>
 
 ## 2.4. 고도몰5
@@ -130,7 +130,7 @@ Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 
 Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 업무 진행 업체인 NHN Data에 연락을 주시면 설치 및 테스트를 지원해드립니다. 아래 연락처로 연락해주시기 바랍니다. 
 
  . 고객센터(전화): 1877-7035 <br>
- . 채널 톡(채팅) 상담 : https://navercts.channel.io/home <br>
+ . 채널 톡(채팅) 상담 : [https://navercts.channel.io/home](https://navercts.channel.io/home) <br>
  . 공용 Email : navercts@nhndata.com <br>
 
 ## 2.5. 위사
@@ -153,7 +153,7 @@ Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 
 Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 업무 진행 업체인 NHN Data에 연락을 주시면 설치 및 테스트를 지원해드립니다. 아래 연락처로 연락해주시기 바랍니다. 
 
  . 고객센터(전화): 1877-7035 <br>
- . 채널 톡(채팅) 상담 : https://navercts.channel.io/home <br>
+ . 채널 톡(채팅) 상담 : [https://navercts.channel.io/home](https://navercts.channel.io/home) <br>
  . 공용 Email : navercts@nhndata.com <br>
 
 ## 2.6. 후이즈몰
@@ -178,5 +178,5 @@ Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 
 Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 업무 진행 업체인 NHN Data에 연락을 주시면 설치 및 테스트를 지원해드립니다. 아래 연락처로 연락해주시기 바랍니다. 
 
  . 고객센터(전화): 1877-7035 <br>
- . 채널 톡(채팅) 상담 : https://navercts.channel.io/home <br>
+ . 채널 톡(채팅) 상담 : [https://navercts.channel.io/home](https://navercts.channel.io/home) <br>
  . 공용 Email : navercts@nhndata.com <br>
