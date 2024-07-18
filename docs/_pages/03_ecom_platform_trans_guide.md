@@ -41,6 +41,7 @@ lesson: 3
 #### STEP 01. 카페24 Admin 화면에 로그인하여 '디자인(PC/모바일)' 메뉴를 클릭
 
 ![카페24_01]({{"/assets/img/03_ecom_ptg_cafe24_step01.png"| relative_url}})
+![고도몰이나무_01]({{"/assets/img/godomall_enamu_01.png"| relative_url}})
 
 #### STEP 02. 사용하고자 하는 디자인 스킨에 대한 '디자인편집' 버튼 클릭
 ![카페24_02]({{"/assets/img/03_ecom_ptg_cafe24_step02.png"| relative_url}})
