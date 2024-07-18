@@ -1,5 +1,9 @@
-
-제목: 네이버 광고 웹 전환 추적을 위한 임대몰 신 스크립트(trans버전) 수동설치 가이드
+---
+title: 네이버 광고 웹 전환 추적을 위한 임대몰 신 스크립트(trans버전) 수동설치 가이드
+layout: post
+lesson: 3
+---
+------
 
 
 # 1. 개요
@@ -36,17 +40,17 @@
 
 #### STEP 01. 카페24 Admin 화면에 로그인하여 '디자인(PC/모바일)' 메뉴를 클릭
 
-![[Pasted image 20240717232915.png]]
+![카페24_01]({{"/assets/img/03_ecom_ptg_cafe24_step01.png"| relative_url}})
 
 #### STEP 02. 사용하고자 하는 디자인 스킨에 대한 '디자인편집' 버튼 클릭
-![[Pasted image 20240717233213.png]]
+![카페24_02]({{"/assets/img/03_ecom_ptg_cafe24_step02.png"| relative_url}})
 
 #### STEP 03. 전환행동의 발생이 완료되는 화면 전환스크립트를 삽입합니다.
 삽입하고자 하는 전환행동이 완료되는 화면을 찾습니다. (회원가입완료 라면, `회원 > 회원가입 결과(join_result.html)` 화면을 찾습니다.)
 우측의 `HTML`삽입 화면 제일 하단에 스크립트를 삽입합니다.
 
 
-![[Pasted image 20240717235823.png]]
+![카페24_03]({{"/assets/img/03_ecom_ptg_cafe24_step03.png"| relative_url}})
 
 위 이미지의 복사용 스크립트는 다음과 같습니다.
 
@@ -73,8 +77,9 @@ if (window.wcs) {
 
 #### STEP 04. 저장 버튼을 클릭합니다.
 Skin 화면 수정을 반영하기 위해 '저장'버튼을 클릭합니다.
-![[Pasted image 20240718000551.png]]
+![카페24_04]({{"/assets/img/03_ecom_ptg_cafe24_step04.png"| relative_url}})
 
+------
 
 Version: 20240718_01
 
