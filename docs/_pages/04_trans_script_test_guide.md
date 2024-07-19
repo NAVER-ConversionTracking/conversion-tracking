@@ -151,15 +151,15 @@ Cookie: ASID=0a1924b30000018b33ea9f2a00008e9c; buid=DSC5wraurNnKpdy8r7Sg64j54w; 
 {"wa":"s_305c16ba63b1","u":"http://OOOOOO.www267.freesell.co.kr/shop/shopdetail.html?branduid=12235601&search=&xcode=001&mcode=001&scode=&special=2&GfDT=bm9%2FW1w%3D","e":"http://OOOOOO.www267.freesell.co.kr/index.html","bt":"1721277427","os":"Win32","ln":"ko-KR","sr":"2560x1440","bw":1319,"bh":804,"c":24,"j":"N","jv":"1.8","k":"Y","ct":"","cs":"EUC-KR","tl":"%5B%EA%B3%A0%EC%96%91%EC%9D%B4%20%EC%82%AC%EB%A3%8C%20%ED%85%8C%EC%8A%A4%ED%8A%B8%5D","vs":"0.8.13","nt":1721277432718,"fwb":"1974FD3cvdMsebsbpmSZFtK.1720764497469","ui":"{\"nac\":\"s3aQBMAedgpJB\"}","ext":"{\"wot\":397.30000001192093}"}
 ```
 
-위 json을 보기좋게 정리하면 다음과 같은 항목들이 있음을 알 수 있습니다
+위 json을 보기좋게 정리하면 다음과 같은 항목들이 있음을 알 수 있습니다.<br>
 (`wa`: 네이버공통키, `u`: 방문한 페이지의 URL, `e`: referrer)
 
 ![04_tsg_02-02-00-01]({{"/assets/img/04_tsg_02-02-00-01.png"| relative_url}})
 
 
 #### (2) 전환로그
-사이트에서 발생하는 이용자의 행동 중, 측정하고자 하는 특정 행동이 발생했을 때만 발생하는 로그입니다.
-특정 페이지를 방문할 경우, 특정 행동이 완료된 경우, 혹은 특정 버튼이 클릭된 경우등에만 발생하도록 할 수 있습니다. 
+사이트에서 발생하는 이용자의 행동 중, 측정하고자 하는 특정 행동이 발생했을 때만 발생하는 로그입니다.<br>
+특정 페이지를 방문할 경우, 특정 행동이 완료된 경우, 혹은 특정 버튼이 클릭된 경우등에만 발생하도록 할 수 있습니다. <br>
 
 예를 들어 상품상세페이지 방문을 측정하고자 하는 경우, 올바르게 설치가 된 경우라면, 상품상세페이지에 방문한 경우 PV(Page View)로그와 전환로그 2개가 발생하며, 이 중 전환로그에 대한 HTTP(HTTP Request)의 모습은 다음과 같으며
 
