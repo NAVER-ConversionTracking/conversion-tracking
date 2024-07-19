@@ -27,7 +27,7 @@ lesson: 4
 
 구 스크립트(cnv) 버전에서의 전환유형 번호 와 신 스크립트(trans) 버전에서의 전환유형간에는 다음과 같이 mapping됩니다.
 
-![[Pasted image 20240718151013.png]]
+![04_tsg_01_02-01-01]({{"/assets/img/04_tsg_01_02-01-01.png"| relative_url}})
 
 위 장바구니의 예시와 마찬가지로 신 스크립트(trans)버전에서 `lead` 인 전환이 발생하면, 구 스크립트(cnv)버전에서의 `4`번 전환은 영구히 필터링 됩니다.
 
@@ -71,14 +71,14 @@ HTTP 모니터링 툴 Fiddler Classic 을 다음과 같이 설정하면 테스�
  . 다른 TAB으로 이동하면 저장됩니다.<br>
 위와 같이 설정하면, 테스트시 발생하는 여러가지 HTTP 중, 광고전환관련 로그 수집서버인 `wcs.naver.com` 으로 전송되는 로그만 툴에 보여져 테스트를 보다 편하게 하실 수 있습니다.<br>
 
-![[Pasted image 20240718112658.png]]
+![04_tsg_02_02_00-01]({{"/assets/img/04_tsg_02_02_00-01.png"| relative_url}})
 
 ■ Fiddler Classic 에서 로그 확인 방법
 
 로그 발생시, 좌측 HTTP 목록에서 (host) wcs.naver.com 을 클릭하시고, 우측 TAB중에 `Inspectors`를 선택, 하단 TAB중에 `Raw`를 선택합니다.<br>
 하늘색 패널의 하단 부분의 `{"wa":...`로 시작하는 부분 부터 끝까지가 사이트에서 발생하는 로그의 `정보`에 해당되는 부분입니다.<br>
 
-![[Pasted image 20240718114338.png]]
+![04_tsg_02_02_01-02]({{"/assets/img/04_tsg_02_02_01-02.png"| relative_url}})
 
 
 ### 2.2.2. json parser 사이트 jsongrid.com 사이트 사용 방법
@@ -93,7 +93,7 @@ HTTP모니터링 툴에서 로그의 `정보`에 해당되는 부분을 복사�
 
 복사한 Text를 사이트 창 왼편에 붙이고, 중간에 화살표 버튼을 클릭합니다. 우측 `GRID` 부분에서 json 정보를 표의 형태로 깔끔하게 확인할 수 있습니다.
 
-![[Pasted image 20240718120741.png]]
+![04_tsg_02_02_02-01]({{"/assets/img/04_tsg_02_02_02-01.png"| relative_url}})
 
 ■ 전환로그 확인 방법
 브라우저를 열고, 창을 2개를 띄우고, 2개의 창 모두에서 https://jsongrid.com/ 에 접속합니다. (창 2개를 각각 `1번 윈도우`, `2번 윈도우` 로 칭합니다.)
@@ -105,13 +105,13 @@ HTTP모니터링 툴에서 로그의 `정보`에 해당되는 부분을 복사�
 
 복사한 Text를 `1번 윈도우` 왼편에 붙이고, 중간에 화살표 버튼을 클릭합니다. 우측 `GRID` 부분에서 json 정보를 표의 형태로 깔끔하게 확인할 수 있습니다.
 
-![[Pasted image 20240718131755.png]]
+![04_tsg_02_02_02-02]({{"/assets/img/04_tsg_02_02_02-02.png"| relative_url}})
 
 우측 `GRID` 부분의 trans항목의 값 부분을 마우스로 빠르게 3번클릭을 합니다. 그러면 값부분의 전체를 선택할 수 있습니다.
 (혹은 마우스로 drag를 하셔도 됩니다)
 이 Text를 복사를 하신 뒤, `2번 윈도우` 의 왼쪽에 불여 넣고, 중간에 화살표 버튼을 클릭한 뒤, 우측 상단에 Expand All 버튼을 클릭합니다.
 
-![[Pasted image 20240718133452.png]]
+![04_tsg_02_02_02-03]({{"/assets/img/04_tsg_02_02_02-03.png"| relative_url}})
 
 그러면 우측 창에서 trans 전환 값의 모양을 확인할 수 있으며, 전환유형 및 item 관련 정보를 확인하실 수 있습니다.
 
@@ -153,7 +153,7 @@ Cookie: ASID=0a1924b30000018b33ea9f2a00008e9c; buid=DSC5wraurNnKpdy8r7Sg64j54w; 
 위 json을 보기좋게 정리하면 다음과 같은 항목들이 있음을 알 수 있습니다
 (`wa`: 네이버공통키, `u`: 방문한 페이지의 URL, `e`: referrer)
 
-![[Pasted image 20240718133827.png]]
+![04_tsg_02-02-00-01]({{"/assets/img/04_tsg_02-02-00-01.png"| relative_url}})
 
 
 #### (2) 전환로그
@@ -194,7 +194,7 @@ Cookie: ASID=0a1924b30000018b33ea9f2a00008e9c; buid=DSC5wraurNnKpdy8r7Sg64j54w; 
 위 json을 보기좋게 정리하면 다음과 같은 항목들이 있음을 알 수 있습니다.<br>
 (`trans`: 발생한 전환에 대한 정보, `trans`의 `type`은 전환유형영문코드, `items`는 상품에 대한 정보)
 
-![[Pasted image 20240718133933.png]]
+![04_tsg_02-02-00-02]({{"/assets/img/04_tsg_02-02-00-02.png"| relative_url}})
 
 ## 2.3. 테스트 방법
 
@@ -287,7 +287,8 @@ Cookie: ASID=0a1924b30000018b33ea9f2a00008e9c; buid=DSC5wraurNnKpdy8r7Sg64j54w; 
 {"wa":"s_305c16ba63b1","e":"http://gradion7.www267.freesell.co.kr/index.html","u":"http://gradion7.www267.freesell.co.kr/shop/shopdetail.html?branduid=12235601&search=&xcode=001&mcode=001&scode=&special=2&GfDT=bml0W1w%3D","vs":"0.8.13","nt":1721280287073,"t":"conv","trans":"{\"type\":\"view_product\",\"items\":[{\"id\":\"12235601\",\"name\":\"고양이 사료 테스트\"}]}","fwb":"1974FD3cvdMsebsbpmSZFtK.1720764497469","ui":"{\"nac\":\"s3aQBMAedgpJB\"}","ext":"{\"wot\":377.5}"}
 ```
 
-![[Pasted image 20240718153517.png]]
+![04_tsg_02-03-00-01]({{"/assets/img/04_tsg_02-03-00-01.png"| relative_url}})
+
 ##### (2) 버튼 클릭으로 전환이 발생하는 경우
 버튼 클릭시 페이지 로딩이 되지 않으므로, 버튼 클릭 전환에 의한 전환로그 1개만 발생합니다. (PV는 발생하지 않습니다.)
 
@@ -316,7 +317,8 @@ Cookie: ASID=0a1924b30000018b33ea9f2a00008e9c; buid=DSC5wraurNnKpdy8r7Sg64j54w; 
 
 {"wa":"s_305c16ba63b1","e":"http://gradion7.www267.freesell.co.kr/shop/shopdetail.html?branduid=12235601&search=&xcode=001&mcode=001&scode=&special=2&GfDT=bml0W1w%3D","u":"http://gradion7.www267.freesell.co.kr/html/log_basket.html","vs":"0.8.13","nt":1721280330988,"t":"conv","trans":"{\"type\":\"add_to_cart\",\"items\":[{\"id\":\"12235601\",\"name\":\"고양이 사료 테스트\"}]}","fwb":"1974FD3cvdMsebsbpmSZFtK.1720764497469","ui":"{\"nac\":\"s3aQBMAedgpJB\"}","ext":"{\"wot\":43.900000005960464}"}
 ```
-![[Pasted image 20240718153533.png]]
+![04_tsg_02-03-00-02]({{"/assets/img/04_tsg_02-03-00-02.png"| relative_url}})
+
 또는 
 
 장바구니 버튼 클릭시 전환이 발생하는 경우 예시) `Type 2번`
@@ -343,7 +345,8 @@ Cookie: ASID=0a1924b30000018b33ea9f2a00008e9c; buid=DSC5wraurNnKpdy8r7Sg64j54w; 
 {"wa":"s_305c16ba63b1","e":"http://gradion7.www267.freesell.co.kr/shop/shopdetail.html?branduid=12235601&search=&xcode=001&mcode=001&scode=&special=2&GfDT=bmx1W1w%3D","u":"http://gradion7.www267.freesell.co.kr/html/log_basket.html","vs":"0.8.13","nt":1721280500248,"t":"conv","trans":"{\"type\":\"add_to_cart\",\"items\":[{\"id\":\"12235601\",\"name\":\"고양이 사료 테스트\"}],\"ai\":{\"sa\":{\"ci\":\"0za0003w4Ivz9giLF1oB\",\"t\":\"1721280493\",\"u\":\"http%3A%2F%2Fgradion7.www267.freesell.co.kr%2Findex.html%3FNaPm%3Dct%253Dltfg01cg%257Cci%253D0za0003w4Ivz9giLF1oB%257Ctr%253Dsa%257Chk%253Dd60cbcba879cef5c2d2213ba59dea77a59c267fa\"},\"gfa\":{\"ci\":\"0zi0002dlkLADH6a8vn0\",\"t\":\"1721280451\",\"u\":\"http%3A%2F%2Fgradion7.www267.freesell.co.kr%2Findex.html%3FNaPm%3Dct%253Dlxettf2w%257Cci%253D0zi0002dlkLADH6a8vn0%257Ctr%253Dgfa%257Chk%253D929fb9328d4f344e1cf4bf164086084372d8025e%257Cnacn%253DfRhxCYgPqj2yA\"}}}","fwb":"1974FD3cvdMsebsbpmSZFtK.1720764497469","ui":"{\"nac\":\"s3aQBMAedgpJB\"}","ext":"{\"wot\":42.599999994039536}"}
 ```
 
-![[Pasted image 20240718153553.png]]
+![04_tsg_02-03-00-03]({{"/assets/img/04_tsg_02-03-00-03.png"| relative_url}})
+
 ##### (3) 구매완료 페이지의 경우
 페이지에서 전환이 발생하므로, PV로그 1개와 구매완료(purchase) 전환로그 1개로 총 2개의 로그가 발생합니다 
 구매완료의 경우, 다른 전환과 다르게, 여러가지 Property(conv.id, item(상품)정보, conv.value)가 포함되는 경우가 많습니다.
@@ -400,7 +403,7 @@ Cookie: ASID=0a1924b30000018b33ea9f2a00008e9c; buid=DSC5wraurNnKpdy8r7Sg64j54w; 
 
 {"wa":"s_305c16ba63b1","e":"http://gradion7.www267.freesell.co.kr/shop/orderin.html","u":"http://gradion7.www267.freesell.co.kr/m/order_complete.html?ordernum=20240718143006-15739132451&paymethod=B&card_flag=","vs":"0.8.13","nt":1721280868009,"t":"conv","trans":"{\"type\":\"purchase\",\"id\":\"20240718143006-15739132451\",\"value\":\"4500\",\"items\":[{\"id\":\"12235601\",\"name\":\"고양이 사료 테스트\",\"quantity\":3,\"payAmount\":4500}]}","fwb":"1974FD3cvdMsebsbpmSZFtK.1720764497469","ui":"{\"nac\":\"s3aQBMAedgpJB\"}","ext":"{\"wot\":348.90000000596046}"}
 ```
-![[Pasted image 20240718153609.png]]
+![04_tsg_02-03-00-04]({{"/assets/img/04_tsg_02-03-00-04.png"| relative_url}})
 
 구매완료 (`purchase`)전환로그 예시) `Type 2번`
 
@@ -427,7 +430,7 @@ Cookie: ASID=0a1924b30000018b33ea9f2a00008e9c; buid=DSC5wraurNnKpdy8r7Sg64j54w; 
 {"wa":"s_305c16ba63b1","e":"http://gradion7.www267.freesell.co.kr/shop/orderin.html","u":"http://gradion7.www267.freesell.co.kr/shop/orderend.html?ordernum=20240718143006-15739132451&paymethod=B&card_flag=","vs":"0.8.13","nt":1721280606043,"t":"conv","trans":"{\"type\":\"purchase\",\"id\":\"20240718143006-15739132451\",\"value\":\"4500\",\"items\":[{\"id\":\"12235601\",\"name\":\"고양이 사료 테스트\",\"quantity\":3,\"payAmount\":4500}],\"ai\":{\"sa\":{\"ci\":\"0za0003w4Ivz9giLF1oB\",\"t\":\"1721280493\",\"u\":\"http%3A%2F%2Fgradion7.www267.freesell.co.kr%2Findex.html%3FNaPm%3Dct%253Dltfg01cg%257Cci%253D0za0003w4Ivz9giLF1oB%257Ctr%253Dsa%257Chk%253Dd60cbcba879cef5c2d2213ba59dea77a59c267fa\"},\"gfa\":{\"ci\":\"0zi0002dlkLADH6a8vn0\",\"t\":\"1721280451\",\"u\":\"http%3A%2F%2Fgradion7.www267.freesell.co.kr%2Findex.html%3FNaPm%3Dct%253Dlxettf2w%257Cci%253D0zi0002dlkLADH6a8vn0%257Ctr%253Dgfa%257Chk%253D929fb9328d4f344e1cf4bf164086084372d8025e%257Cnacn%253DfRhxCYgPqj2yA\"}}}","fwb":"1974FD3cvdMsebsbpmSZFtK.1720764497469","ui":"{\"nac\":\"s3aQBMAedgpJB\"}","ext":"{\"wot\":240.2999999821186}"}
 ```
 
-![[Pasted image 20240718153629.png]]
+![04_tsg_02-03-00-05]({{"/assets/img/04_tsg_02-03-00-05.png"| relative_url}})
 
 Version: 20240718_01
 
