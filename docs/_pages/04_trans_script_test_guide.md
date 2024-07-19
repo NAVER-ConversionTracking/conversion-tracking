@@ -12,9 +12,10 @@ lesson: 4
 
 ## 1.2. 설치 및 테스트시 주의사항
 
-※ 주의
-스크립트 설치테스트시 아래 중복전환필터링 로직을 반드시 숙지하시고 테스트 하시기 바랍니다.
+> ##### WARNING
+> 스크립트 설치테스트시 아래 중복전환필터링 로직을 반드시 숙지하시고 테스트 하시기 바랍니다.
 신 스크립트(trans)에 의한 전환이 발생하는 경우, 그 전환과 동일한 유형의 전환으로 취급되는 구 스크립트(cnv)전환은 영구히 필터링 되므로 설치테스트시 주의가 필요하며 아래 내용을 반드시 숙지해주시기 바랍니다.
+{: .block-warning }
 
 현재 네이버 광고플랫폼(검색광고, 성과형디스플레이광고)에는 전환중복로그 발생으로, 광고 보고서에 중복으로 전환값이 잡히는 것을 방지하고자, 중복전환필터링 로직이 적용되어 있습니다. 
 중복전환 필터링 로직은 다음과 같습니다.
@@ -34,10 +35,10 @@ lesson: 4
  . 신 스크립트(trans)버전의 전환유형 string을 넣으실 때(예:  `_conv.type = "OOOOOO";` 에서 `OOOOOO`부분), 사용하고자 하시는 전환유형 string의 앞에 `test_`를 넣으시는 것을 추천드립니다 (예: `add_to_cart` 를 테스트 하신다면, `test_add_to_cart`로 설정) 이렇게 하시면 `add_to_cart` 를 테스트 하시다가, 기존 구 스크립트(cnv)에 의해 발생하는 3번(장바구니)전환이 영구히 필터링 되어버리는 불상사를 방지할 수 있을 것입니다.
  테스트하시고 문제 없음이 모두 확인되었을 때 원래 스펙에 있는 전환유형 string을 넣으시는 것을 권장드립니다.
  
-※ 참고
-  . 신 스크립트(trans)버전을 이용하여 테스트를 하실 때, 전환유형 string을 넣으실 때(예:  `_conv.type = "OOOOOO";` 에서 `OOOOOO`부분), 구 스크립트(cnv)버전과 신 스크립트(trans)버전의 mapping이 존재하는 `purchase`, `sign_up`, `add_to_cart`, `lead`, `custom001` 외 다른 string을 사용하시거나
- . 또는 공식문서에 존재하는 string이 아닌 다른 string (예: `test_add_to_cart`)을 사용하셔서 테스트 하시는 것도 가능합니다. 
- . 다만, 혹시 모를 실수를 방지하기 위해, 그리고 편의를 위해, 사용하고자 하시는 전환유형 string의 앞에 `test_OOOOOO`와 같이 사용하시는 것이 보다 편리하실 것으로 보여 이 방법을 권장드립니다.
+※ 참고<br>
+  . 신 스크립트(trans)버전을 이용하여 테스트를 하실 때, 전환유형 string을 넣으실 때(예:  `_conv.type = "OOOOOO";` 에서 `OOOOOO`부분), 구 스크립트(cnv)버전과 신 스크립트(trans)버전의 mapping이 존재하는 `purchase`, `sign_up`, `add_to_cart`, `lead`, `custom001` 외 다른 string을 사용하시거나<br>
+ . 또는 공식문서에 존재하는 string이 아닌 다른 string (예: `test_add_to_cart`)을 사용하셔서 테스트 하시는 것도 가능합니다. <br>
+ . 다만, 혹시 모를 실수를 방지하기 위해, 그리고 편의를 위해, 사용하고자 하시는 전환유형 string의 앞에 `test_OOOOOO`와 같이 사용하시는 것이 보다 편리하실 것으로 보여 이 방법을 권장드립니다.<br>
  
 
 # 2. 테스트 방법
@@ -46,14 +47,14 @@ lesson: 4
  (2) 테스트시 이용하려는 단말기(예: 데스크톱 PC)에서 HTTP 를 모니터링 할 수 있는 툴을 준비합니다.
  (3) json 을 쉽게 보여주는 json parser 툴/웹서비스를 준비합니다. 
 
-※ [참고1] HTTP모니터링 툴 관련
- . 단말기에서 로그 수집서버로 전송하는 모든 로그를 보여주는 HTTP 모니터링 툴을 준비해주시기 바랍니다. (Chrome개발자도구 의 경우, 해당 브라우저창에서 발생하는 HTTP만 보여주기 때문에 모니터링 툴로는 적합하지 않은 경우가 있습니다. 본 문서에는 Fiddler Classic 이라는 툴을 이용한 테스트 방법을 안내드립니다)
-  . Fiddler Classic 프로그램은 https://www.telerik.com/fiddler/fiddler-classic 에서 다운로드 받으실 수 있습니다.
+※ [참고1] HTTP모니터링 툴 관련<br>
+ . 단말기에서 로그 수집서버로 전송하는 모든 로그를 보여주는 HTTP 모니터링 툴을 준비해주시기 바랍니다. (Chrome개발자도구 의 경우, 해당 브라우저창에서 발생하는 HTTP만 보여주기 때문에 모니터링 툴로는 적합하지 않은 경우가 있습니다. 본 문서에는 Fiddler Classic 이라는 툴을 이용한 테스트 방법을 안내드립니다)<br>
+  . Fiddler Classic 프로그램은 https://www.telerik.com/fiddler/fiddler-classic 에서 다운로드 받으실 수 있습니다.<br>
 
-※ [참고2] json parser 관련
- . 수집서버에 전송되는 정보는 plain text인 json format으로 되어 있어, 눈으로 바로 보기에는 가독성이 많이 떨어집니다. json parser를 이용하시면 정보를 보다 쉽게 확인하실 수 있습니다.
- . json을 parsing 하는 툴/웹서비스를 준비함에 있어, 2중 json (nested json)까지 볼 수 있는 툴/웹서비스 준비가 필요합니다.
- . 본 문서에서는 https://jsongrid.com/ 를 이용한 테스트 방법을 안내드립니다.
+※ [참고2] json parser 관련<br>
+ . 수집서버에 전송되는 정보는 plain text인 json format으로 되어 있어, 눈으로 바로 보기에는 가독성이 많이 떨어집니다. json parser를 이용하시면 정보를 보다 쉽게 확인하실 수 있습니다.<br>
+ . json을 parsing 하는 툴/웹서비스를 준비함에 있어, 2중 json (nested json)까지 볼 수 있는 툴/웹서비스 준비가 필요합니다.<br>
+ . 본 문서에서는 https://jsongrid.com/ 를 이용한 테스트 방법을 안내드립니다.<br>
 
 ## 2.2. 툴 설정 / 사용방법
 ### 2.2.1. HTTP모니터링 툴 Fiddler Classic 설정 / 사용 방법
@@ -61,21 +62,21 @@ lesson: 4
 HTTP 모니터링 툴 Fiddler Classic 을 다음과 같이 설정하면 테스트를 좀 더 편하게 진행할 수 있습니다.
 
 ■ Fiddler Classic 설정방법
- . Fiddler Classic을 실행합니다.
- . 좌측 하단에 `Capturing`이 표시되도록 합니다 (표시가 안되면 해당 위치를 마우스로 클릭하면 변경됨)
- . 우측 TAB중에 Filters를 선택합니다.
- . UserFilters 를 클릭하여 Check 합니다.
- . Hosts 부분에 combo box에 `-No Zone Filter - `, `Show only the following Hosts`를 선택합니다.
- . Text Area 부분에 `wcs.naver.com`을 입력합니다. (`wcs.naver.com` 은 로그 수집 서버 입니다.)
- . 다른 TAB으로 이동하면 저장됩니다.
-위와 같이 설정하면, 테스트시 발생하는 여러가지 HTTP 중, 광고전환관련 로그 수집서버인 `wcs.naver.com` 으로 전송되는 로그만 툴에 보여져 테스트를 보다 편하게 하실 수 있습니다.
+ . Fiddler Classic을 실행합니다.<br>
+ . 좌측 하단에 `Capturing`이 표시되도록 합니다 (표시가 안되면 해당 위치를 마우스로 클릭하면 변경됨)<br>
+ . 우측 TAB중에 Filters를 선택합니다.<br>
+ . UserFilters 를 클릭하여 Check 합니다.<br>
+ . Hosts 부분에 combo box에 `-No Zone Filter - `, `Show only the following Hosts`를 선택합니다.<br>
+ . Text Area 부분에 `wcs.naver.com`을 입력합니다. (`wcs.naver.com` 은 로그 수집 서버 입니다.)<br>
+ . 다른 TAB으로 이동하면 저장됩니다.<br>
+위와 같이 설정하면, 테스트시 발생하는 여러가지 HTTP 중, 광고전환관련 로그 수집서버인 `wcs.naver.com` 으로 전송되는 로그만 툴에 보여져 테스트를 보다 편하게 하실 수 있습니다.<br>
 
 ![[Pasted image 20240718112658.png]]
 
 ■ Fiddler Classic 에서 로그 확인 방법
 
-로그 발생시, 좌측 HTTP 목록에서 (host) wcs.naver.com 을 클릭하시고, 우측 TAB중에 `Inspectors`를 선택, 하단 TAB중에 `Raw`를 선택합니다.
-하늘색 패널의 하단 부분의 `{"wa":...`로 시작하는 부분 부터 끝까지가 사이트에서 발생하는 로그의 `정보`에 해당되는 부분입니다.
+로그 발생시, 좌측 HTTP 목록에서 (host) wcs.naver.com 을 클릭하시고, 우측 TAB중에 `Inspectors`를 선택, 하단 TAB중에 `Raw`를 선택합니다.<br>
+하늘색 패널의 하단 부분의 `{"wa":...`로 시작하는 부분 부터 끝까지가 사이트에서 발생하는 로그의 `정보`에 해당되는 부분입니다.<br>
 
 ![[Pasted image 20240718114338.png]]
 
@@ -190,7 +191,7 @@ Cookie: ASID=0a1924b30000018b33ea9f2a00008e9c; buid=DSC5wraurNnKpdy8r7Sg64j54w; 
 {"wa":"s_305c16ba63b1","e":"http://OOOOOO.www267.freesell.co.kr/index.html","u":"http://OOOOOO.www267.freesell.co.kr/shop/shopdetail.html?branduid=12235601&search=&xcode=001&mcode=001&scode=&special=2&GfDT=bm9%2FW1w%3D","vs":"0.8.13","nt":1721271053466,"t":"conv","trans":"{\"type\":\"view_product\",\"items\":[{\"id\":\"12235601\",\"name\":\"고양이 사료\"}]}","fwb":"1974FD3cvdMsebsbpmSZFtK.1720764497469","ui":"{\"nac\":\"s3aQBMAedgpJB\"}","ext":"{\"wot\":478.69999998807907}"}
 ```
 
-위 json을 보기좋게 정리하면 다음과 같은 항목들이 있음을 알 수 있습니다
+위 json을 보기좋게 정리하면 다음과 같은 항목들이 있음을 알 수 있습니다.<br>
 (`trans`: 발생한 전환에 대한 정보, `trans`의 `type`은 전환유형영문코드, `items`는 상품에 대한 정보)
 
 ![[Pasted image 20240718133933.png]]
