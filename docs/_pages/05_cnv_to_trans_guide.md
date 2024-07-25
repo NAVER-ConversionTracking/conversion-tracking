@@ -13,8 +13,8 @@ lesson: 5
 본 가이드는 사이트 종류로는 사이트의 소스코드를 광고주가 마음대로 변경할 수 있는 `독립몰` 을 대상으로 하고 있습니다.
 
 `임대몰(카페24, 메이크샵 등)`의 경우는 아래 2개 가이드를 참고해주시기 바랍니다.<br>
- . 네이버 광고 웹 전환 추적을 위한 임대몰 설정 가이드<br>
- . 네이버 광고 웹 전환 추적을 위한 임대몰 신 스크립트(trans버전) 수동설치 가이드<br>
+ . [네이버 광고 웹 전환 추적을 위한 임대몰 설정 가이드](https://naver-conversiontracking.github.io/conversion-tracking/pages/02_ecom_platform_guide/)<br>
+ . [네이버 광고 웹 전환 추적을 위한 임대몰 신 스크립트(trans버전) 수동설치 가이드](https://naver-conversiontracking.github.io/conversion-tracking/pages/03_ecom_platform_trans_guide/)<br>
 
 ## 1.2. 설치 및 테스트시 주의사항
 
@@ -221,12 +221,12 @@ if (window.wcs) {
 ### STEP 04. NHN Data에 검수요청 하기
 (독립몰) 사이트에 신 스크립트(trans버전) 설치를 완료 하셨다면, 올바르게 전환이 설치되었는지를 확인하기 위해, 네이버 웹 전환추적 스크립트 설치 공식 아웃소싱 업체인 NHN Data에 연락을 하셔서 재검수 요청을 하시기를 권장드립니다. 재검수 요청을 하시면 전환스크립트가 정상적으로 설치되었는지 확인을 해보고, 결과를 알려드립니다. 만약 잘못된 부분이 있다면, 알려드립니다.
 
-NHN Data 연락처
-. 고객센터(전화): 1877-7035
-. 채널 톡(채팅) 상담 : https://navercts.channel.io/home
-. 공용 Email : navercts@nhndata.com
+NHN Data 연락처<br>
+. 고객센터(전화): 1877-7035<br>
+. 채널 톡(채팅) 상담 : https://navercts.channel.io/home<br>
+. 공용 Email : navercts@nhndata.com<br>
 
-※ 참고
- . 임대몰(카페24, 메이크샵 등)에서의 시스템적으로 자동설치되는 전환에 대해서는 별도의 전환검수가 필요없습니다. 설치가 정상적으로 되어 있는지가 궁금하시다면, [네이버 광고 웹 전환 추적 Script 테스트 가이드] 를 참고하셔서 테스트를 진행해보시기 바랍니다.
+※ 참고<br>
+ . 임대몰(카페24, 메이크샵 등)에서의 시스템적으로 자동설치되는 전환에 대해서는 별도의 전환검수가 필요없습니다. 설치가 정상적으로 되어 있는지가 궁금하시다면, [네이버 광고 웹 전환 추적 Script 테스트 가이드](https://naver-conversiontracking.github.io/conversion-tracking/pages/04_trans_script_test_guide/) 를 참고하셔서 테스트를 진행해보시기 바랍니다.<br>
 
 Version: 20240725_01
