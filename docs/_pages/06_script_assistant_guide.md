@@ -18,7 +18,7 @@ lesson: 6
 {: .block-warning }
 
 [1. 개요](#1-개요) (anchor 만 건 경우) <br>
-[1. 개요]([#1-개요](https://naver-conversiontracking.github.io/conversion-tracking/pages/06_script_assistant_guide/#1-개요)) (full uri로 건 경우) <br>
+[1. 개요](https://naver-conversiontracking.github.io/conversion-tracking/pages/06_script_assistant_guide/#1-개요)) (full uri로 건 경우) <br>
 [3. 어시스턴트 기능 상세가이드](#3-어시스턴트-기능-상세-가이드) <br>
 [4. FAQ](#4-faq) <br>
 
