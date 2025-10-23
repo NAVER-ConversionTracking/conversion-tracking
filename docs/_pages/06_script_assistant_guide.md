@@ -18,15 +18,15 @@ lesson: 6
 {: .block-warning }
 
 [1. 개요](#1-개요) (anchor 만 건 경우) <br>
-[4. FAQ2](#4-faq2) anchor 만 <br>
+[4. FAQ2](#4-faq) anchor 만 <br>
 
-[4. FAQ2](#4-faq2) anchor 만 <br>
-[4. FAQ](https://naver-conversiontracking.github.io/conversion-tracking/pages/06_script_assistant_guide/#4-faq2) full uri<br>
+[4. FAQ2](#4-faq) anchor 만 <br>
+[4. FAQ](https://naver-conversiontracking.github.io/conversion-tracking/pages/06_script_assistant_guide/#4-faq) full uri<br>
 [1. 개요](#1-개요) (anchor 만 건 경우) <br>
 [1. 개요](https://naver-conversiontracking.github.io/conversion-tracking/pages/06_script_assistant_guide/#1-개요) (full uri로 건 경우) <br>
 [3. 어시스턴트 기능 상세가이드](#3-어시스턴트-기능-상세-가이드) <br>
 
-[4. FAQ](https://naver-conversiontracking.github.io/conversion-tracking/pages/06_script_assistant_guide/#4-faq2) full uri<br>
+[4. FAQ](https://naver-conversiontracking.github.io/conversion-tracking/pages/06_script_assistant_guide/#4-faq) full uri<br>
 
 
 
@@ -246,7 +246,7 @@ lesson: 6
 &nbsp;  . 광고 전환추적을 위해 네이버 매체에서 발행하는 파라미터(NaPm)을 보여줍니다. <br>
 &nbsp;  . 광고 클릭시 이 정보가 랜딩페이지까지 유지되어야 광고 전환 추적에 필요한 쿠키생성등이 정상적으로 되어 광고 전환 추적이 가능해집니다.
 
-# 4. FAQ2
+# 4. FAQ
 
 ### Q1: 사이트에 네이버 광고 전환 추적 스크립트와 네이버 애널리틱스 스크립트 두개를 삽입하면 어떻게 보이나요?
 A: 어시스턴트는 네이버 광고 전환 추적 스크립트의 로그와 네이버 애널리틱스 스크립트 로그에 대한 정보를 모두 보여줄 수 있습니다.  <br>
