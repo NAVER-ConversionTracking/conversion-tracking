@@ -18,9 +18,9 @@ lesson: 6
 {: .block-warning }
 
 [1. 개요](#1-개요) (anchor 만 건 경우) <br>
-[4. FAQ2](#4-faq) anchor 만 <br>
+[4. FAQ](#4-faq) anchor 만 <br>
 
-[4. FAQ2](#4-faq) anchor 만 <br>
+[4. FAQ](#4-faq) anchor 만 <br>
 [4. FAQ](https://naver-conversiontracking.github.io/conversion-tracking/pages/06_script_assistant_guide/#4-faq) full uri<br>
 [1. 개요](#1-개요) (anchor 만 건 경우) <br>
 [1. 개요](https://naver-conversiontracking.github.io/conversion-tracking/pages/06_script_assistant_guide/#1-개요) (full uri로 건 경우) <br>
