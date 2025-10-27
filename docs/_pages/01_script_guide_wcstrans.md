@@ -533,8 +533,6 @@ if (window.wcs) {
 
 # 3. FAQ
 
-## FAQ제목2
-
 ### FAQ목록 제목3
 
-Version: 20240702_01
+Version: 202
