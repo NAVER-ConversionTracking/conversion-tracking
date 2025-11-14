@@ -5,6 +5,58 @@ lesson: 6
 ---
 ------
 
+여러가지 callout 을 연습해보자
+
+
+
+```
+> ##### TIP
+> 내용 부분
+{: .block-tip }
+
+> ##### WARNING
+> 내용 부분
+{: .block-warning }
+
+> ##### DANGER
+> 내용 부분
+{: .block-danger }
+
+
+> ##### TIP : 제목제목제목
+> 내용 부분
+{: .block-tip }
+
+
+> ##### 이건 워닝
+> 내용 부분
+{: .block-warning }
+
+```
+
+> ##### TIP
+> 내용 부분
+{: .block-tip }
+
+> ##### WARNING
+> 내용 부분
+{: .block-warning }
+
+> ##### DANGER
+> 내용 부분
+{: .block-danger }
+
+
+> ##### TIP : 제목제목제목
+> 내용 부분
+{: .block-tip }
+
+
+> ##### 이건 워닝
+> 내용 부분
+{: .block-warning }
+
+
 
 # 1. 개요
 ## 1.1. 대상 서비스 및 목적
@@ -28,7 +80,10 @@ lesson: 6
 
 [4. FAQ](https://naver-conversiontracking.github.io/conversion-tracking/pages/06_script_assistant_guide/#4-faq) full uri<br>
 
-
+> ##### WARNING
+> `네이버 전환 스크립트 어시스턴트`는 크롬확장프로그램(=Chrome Extension)의 일종으로, 크롬브라우저에서 정상적으로 동작합니다. (크롬브라우저 외의 브라우저에서는 적절한 테스트가 되어 있지 않습니다)<br>
+> 본 `어시스턴트` 사용시 크롬브라우저 사용을 강력하게 추천드립니다.
+{: .block-warning }
 
 
 ## 1.2. `어시스턴트` 설치 방법
